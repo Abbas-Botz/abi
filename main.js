@@ -37,9 +37,9 @@ const starts = async (helga = new WAConnection()) => {
 		width: 80,
 		whitespaceBreak: false
 	}), 'cyan'))
-	console.log(color('\n> YouTube : ','silver'), color(`Helga Zexs`,'mediumseagreen'))
-console.log(color('> TikTok : ','silver'), color(`@ilhamgz_20`,'mediumseagreen'))
-console.log(color('> Instagram : ','silver'), color(`@helga_store20`,'mediumseagreen'))
+	console.log(color('\n> YouTube : ','silver'), color(`AbbasMods`,'mediumseagreen'))
+console.log(color('> TikTok : ','silver'), color(`@Abbas`,'mediumseagreen'))
+console.log(color('> Instagram : ','silver'), color(`@riski_abbas12`,'mediumseagreen'))
 	helga.browserDescription = [ 'Base Helga', 'ubuntu', '3.0' ]
 
 	helga.on('qr', () => {
@@ -47,7 +47,7 @@ console.log(color('> Instagram : ','silver'), color(`@helga_store20`,'mediumseag
 })
 	helga.on('credentials-updated', () => {
 		fs.writeFileSync('./session.json', JSON.stringify(helga.base64EncodedAuthInfo(), null, '\t'))
-		info('2', 'Base Helga')
+		info('2', 'Base Abbas')
 	})
 	fs.existsSync('./session.json') && helga.loadAuthInfo('./session.json')
 	helga.on('connecting', () => {
@@ -96,7 +96,7 @@ exec(`cd /sdcard/download && play *mp3`)
 			mhan = await helga.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
 const buttonMessages = { imageMessage: mhan.message.imageMessage,
 contentText: `${masuk}`,
-footerText: `𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚 ٬࿊⃟𝑯𝒆𝒍𝒈𝒂𝒂 𝒁𝒆𝒙'𝒔シ︎`, 
+footerText: `𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚 ٬Abbas Modsシ︎`, 
 buttons: gbutsan,
 headerType: 4 }
 			helga.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, {thumbnail: fs.readFileSync('./helga.jpg'), "contextInfo": { mentionedJid: [num]}, caption: 'Tes', quoted: fkontakk})
@@ -116,7 +116,7 @@ headerType: 4 }
 			mhan = await helga.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
 const buttonMessages = { imageMessage: mhan.message.imageMessage,
 contentText: `${keluar}`,
-footerText: `𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚 ٬࿊⃟𝑯𝒆𝒍𝒈𝒂𝒂 𝒁𝒆𝒙'𝒔シ︎`,
+footerText: `𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚 ٬Abbas Modsシ︎`,
 buttons: gbutsan,
 headerType: 4 }
 			helga.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, { thumbnail: fs.readFileSync('./helga.jpg'), "contextInfo": { mentionedJid: [num]}, caption: 'Tes', quoted: fkontakk})
